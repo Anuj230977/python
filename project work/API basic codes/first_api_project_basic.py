@@ -11,12 +11,21 @@ def get_pokemon_info(name):
         return pokemon_data
     else:
         print(f"Failed to retrieve data {response.status_code}")
-
-pokemon_name = "Dolliv"
+#trying input
+pokemon_name = input("Enter Pokémon name: ")
+#pokemon_name = "Dolliv"
 pokemon_info = get_pokemon_info(pokemon_name)
 
 if pokemon_info:
-    print(f"Name: {pokemon_info["name"].capitalize()}")
-    print(f"Id: {pokemon_info["id"]}")
-    print(f"Height: {pokemon_info["height"]}")
-    print(f"Weight: {pokemon_info["weight"]}")
+    #print(f"Name: {pokemon_info["name"].capitalize()}")
+    #print(f"Id: {pokemon_info["id"]}")
+    #print(f"Height: {pokemon_info["height"]}")
+    #print(f"Weight: {pokemon_info["weight"]}")
+    #trying to get output in float decimal format.
+    print(f"Name: {pokemon_info['name'].capitalize()}")
+    print(f"Id: {pokemon_info['id']}")
+    print(f"Height: {pokemon_info['height'] / 10:.2f} m")
+    print(f"Weight: {pokemon_info['weight'] / 10:.2f} kg")
+    #sucessfully printed the pokemon info
+else:
+    print("No Pokémon data found.")    
