@@ -1,4 +1,3 @@
-
 # Import the regular expressions module for pattern matching
 import re
 
@@ -136,6 +135,26 @@ synonym_lists = {
         "math tip", "math joke", "solve equation", "help with numbers", "math trivia",
         "how to calculate", "simple math", "complex math", "what is algebra", "math trick", "number facts",
         "math hacks", "math logic"
+    ],
+    "study_tips": [
+        "study tips", "how to study", "study advice", "help me study", "study smarter",
+        "study hack", "study tricks", "study routine", "study plan", "study help"
+    ],
+    "motivation_quotes": [
+        "motivation quote", "inspire me", "give me a quote", "quote of the day", "inspirational quote",
+        "motivational saying", "uplifting quote", "positive quote", "life quote", "success quote"
+    ],
+    "programming_help": [
+        "help with python", "coding help", "programming question", "debug my code", "fix my code",
+        "explain this code", "code error", "coding advice", "programming tips", "how to code"
+    ],
+    "funny_memes": [
+        "send a meme", "funny meme", "make me laugh more", "show me a meme", "meme please",
+        "give me a meme", "share a meme", "random meme", "meme time", "meme bot"
+    ],
+    "book_recommendations": [
+        "book suggestion", "recommend a book", "good books", "what to read", "book to read",
+        "reading list", "book advice", "book ideas", "suggest a novel", "book rec"
     ]
 }
  # Predefined responses for each category
@@ -160,7 +179,12 @@ responses = {
     "weather_fun":      "Rain or shine, I’m always online ☀️🌧️",
     "random_queries":   "Here’s something cool: bananas are berries, but strawberries aren’t 🍓🤯",
     "language_talk":    "‘Bonjour’ means hello in French! Want more?",
-    "math_queries":     "Let’s crunch numbers! Ask me a math question 🧮"
+    "math_queries":     "Let’s crunch numbers! Ask me a math question 🧮",
+    "study_tips":      "Break your study sessions into short, focused intervals and take regular breaks. Stay hydrated and review your notes often!",
+    "motivation_quotes": "“The only way to do great work is to love what you do.” – Steve Jobs",
+    "programming_help": "Describe your programming problem, and I'll do my best to help! If you have an error message, please share it.",
+    "funny_memes":     "Why did the computer show up at work late? It had a hard drive! (Sorry, I can't send images, but I can tell jokes!)",
+    "book_recommendations": "I recommend 'Atomic Habits' by James Clear for self-improvement, or 'The Alchemist' by Paulo Coelho for inspiration."
 }
 
 
