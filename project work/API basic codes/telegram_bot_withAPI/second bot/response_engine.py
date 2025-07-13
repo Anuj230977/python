@@ -1,6 +1,9 @@
+
+# Import the regular expressions module for pattern matching
 import re
 
-# 5 templates to wrap around each synonym
+# List of templates to generate different ways a user might say a keyword
+# For example, "hello", "hello!", "hello 😊", etc.
 templates = [
     "{synonym}",
     "{synonym}!",
@@ -8,7 +11,8 @@ templates = [
     "{synonym} please",
     "{synonym}?"
 ]
-# Synonym lists for various categories
+ # Dictionary of categories, each with a list of synonyms/phrases users might use
+ # This helps the bot recognize many ways to say the same thing (like greetings, thanks, etc.)
 synonym_lists = {
     "greetings": [
         "hello", "hi", "hey", "greetings", "good morning", "good afternoon",
@@ -134,7 +138,8 @@ synonym_lists = {
         "math hacks", "math logic"
     ]
 }
-# Predefined response by category
+ # Predefined responses for each category
+ # When a user's message matches a category, the bot replies with the corresponding response
 responses = {
     "greetings":       "Hello! How can I assist you today?",
     "farewells":       "Goodbye! Have a great day!",
@@ -158,21 +163,29 @@ responses = {
     "math_queries":     "Let’s crunch numbers! Ask me a math question 🧮"
 }
 
-# Build regex→response mapping
+
+# Build a dictionary mapping regex patterns to responses
+# This allows the bot to quickly check if a user's message matches any known pattern
 pattern_response_pairs = {}
 for category, synonyms in synonym_lists.items():
     for synonym in synonyms:
         for tmpl in templates:
             phrase = tmpl.format(synonym=synonym)
-            # case-insensitive whole-word match
+            # Create a regex pattern for each phrase (case-insensitive, whole word)
             pattern = re.compile(r"\b" + re.escape(phrase.lower()) + r"\b", re.IGNORECASE)
+            # Map the pattern to the appropriate response
             pattern_response_pairs[pattern] = responses[category]
 
-# Confirm you've generated at least 1,000 patterns
-#assert len(pattern_response_pairs) >= 1000
 
+# (Optional) Confirm you've generated at least 1,000 patterns
+# assert len(pattern_response_pairs) >= 1000
+
+
+# Main function to handle user input and return a response
+# It checks the user's text against all known patterns and returns the first matching response
 def handle_response(text: str) -> str:
     for pattern, response in pattern_response_pairs.items():
         if pattern.search(text):
-            return response
+            return response  # Return the matched response
+    # If no pattern matches, return a default message
     return "I'm still learning. Try asking about jokes, greetings, or weather!"
