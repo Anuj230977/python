@@ -75,9 +75,66 @@ synonym_lists = {
         "temperature", "is it raining", "is it sunny", "weather update",
         "weather report", "weather now", "will it rain", "what's the forecast",
         "weather?", "weather??", "tell weather", "weather info"
+    ],
+    "compliments": [
+        "you're smart", "you're funny", "nice bot", "cool", "great job", "well done",
+        "you rock", "you're awesome", "impressive", "brilliant", "you're helpful", "good bot",
+        "smart bot", "friendly bot", "you're kind", "so intelligent", "amazing bot", "i like you",
+        "good assistant", "you nailed it"
+    ],
+    "food_talk": [
+        "i'm hungry", "what to eat", "food suggestions", "give me a recipe", "suggest a dish",
+        "best food", "i want food", "what's cooking", "favorite snack", "tasty", "yum", "what's for dinner",
+        "what's for lunch", "hungry", "thirsty", "drink ideas", "healthy food", "junk food", "make me food",
+        "cook something"
+    ],
+    "fun_requests": [
+        "make me smile", "something fun", "fun please", "bored", "entertain me", "tell a fun fact",
+        "surprise me", "interesting stuff", "impress me", "amuse me", "give me trivia", "make it exciting",
+        "spin a story", "curious stuff", "cool stuff", "funny fact", "exciting", "wow me", "show talent",
+        "fun time"
+    ],
+    "emotion_check": [
+        "i'm sad", "feeling down", "not okay", "cheer me up", "bad day", "tough time", "need support",
+        "feeling low", "depressed", "frustrated", "lonely", "upset", "help emotionally", "talk to me",
+        "make me feel better", "listen to me", "i need a friend", "comfort me", "uplift me", "dark mood"
+    ],
+    "tech_queries": [
+        "what is ai", "what is chatbot", "tech news", "technology updates", "explain machine learning",
+        "how do bots work", "tell me about neural networks", "what is python", "what's programming",
+        "help with code", "explain algorithms", "what's github", "learn tech", "teach me tech",
+        "what is computing", "what is cloud", "digital world", "ai facts", "learn python", "what is coding"
+    ],
+    "motivation": [
+        "motivate me", "encourage me", "give me advice", "pep talk", "life advice", "i need inspiration",
+        "say something inspiring", "uplift me", "power quote", "mental boost", "positive words",
+        "tell me something good", "self belief", "dream big", "confidence boost", "fire me up",
+        "help me focus", "goal setting", "get productive", "help me move forward"
+    ],
+    "weather_fun": [
+        "sunny day", "rainy mood", "cloud talk", "thunder vibes", "weather jokes", "what's outside",
+        "humidity", "cold", "hot", "mild weather", "extreme weather", "snow talk", "storm",
+        "weather emotion", "fog", "chilly", "heatwave", "monsoon", "climate chat", "season talk"
+    ],
+    "random_queries": [
+        "random", "give me anything", "surprise me", "any fact", "random thought", "drop something",
+        "hit me with a topic", "freestyle", "tell me anything", "pick a theme", "share a story",
+        "what's next", "think for me", "what's trending", "what's cool", "no idea", "anything works",
+        "show talent", "your choice", "go wild"
+    ],
+    "language_talk": [
+        "teach me hindi", "teach me english", "translate", "language tip", "talk in spanish",
+        "say hello in french", "help with grammar", "word meaning", "language joke", "common phrases",
+        "language facts", "how to greet", "international greeting", "easy phrases", "cool words",
+        "simple sentences", "word game", "teach language", "learn language", "how to say it"
+    ],
+    "math_queries": [
+        "solve math", "calculate", "math help", "addition", "subtraction", "multiply", "divide",
+        "math tip", "math joke", "solve equation", "help with numbers", "math trivia",
+        "how to calculate", "simple math", "complex math", "what is algebra", "math trick", "number facts",
+        "math hacks", "math logic"
     ]
 }
-
 # Predefined response by category
 responses = {
     "greetings":       "Hello! How can I assist you today?",
@@ -89,7 +146,17 @@ responses = {
     "origin_queries":  "I reside in the cloud 🌩️",
     "joke_requests":   "Why did the programmer quit? Because he didn't get arrays.",
     "help_requests":   "Sure, what do you need help with?",
-    "weather_queries": "I don't have real-time weather, but it's always sunny in code!"
+    "weather_queries": "I don't have real-time weather, but it's always sunny in code!",
+    "compliments":      "You're too kind 😊 I'm always here to help!",
+    "food_talk":        "Craving something tasty? How about paneer butter masala or a cheesy sandwich?",
+    "fun_requests":     "Sure! Did you know octopuses have three hearts? 🐙",
+    "emotion_check":    "You’re not alone. I’m here, and I believe in you 🫶",
+    "tech_queries":     "AI is like giving a brain to machines—want a deep dive?",
+    "motivation":       "Push forward, even when it’s tough. You’ve got this 💪",
+    "weather_fun":      "Rain or shine, I’m always online ☀️🌧️",
+    "random_queries":   "Here’s something cool: bananas are berries, but strawberries aren’t 🍓🤯",
+    "language_talk":    "‘Bonjour’ means hello in French! Want more?",
+    "math_queries":     "Let’s crunch numbers! Ask me a math question 🧮"
 }
 
 # Build regex→response mapping
