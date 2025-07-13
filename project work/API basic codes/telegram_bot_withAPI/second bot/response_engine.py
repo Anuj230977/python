@@ -8,8 +8,7 @@ templates = [
     "{synonym} please",
     "{synonym}?"
 ]
-
-# 10 categories × 20 synonyms each = 200 total entries
+# Synonym lists for various categories
 synonym_lists = {
     "greetings": [
         "hello", "hi", "hey", "greetings", "good morning", "good afternoon",
