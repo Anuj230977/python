@@ -7,7 +7,10 @@ from response_engine import handle_response  # Custom function to generate respo
 
 import os  # For accessing environment variables
 from dotenv import load_dotenv  # For loading variables from .env file
-
+if __name__ == "__main__":
+    test_input = "how are you"
+    reply = handle_response(test_input)
+    print("Bot:", reply)
 # Load environment variables from .env file (like your bot token and username)
 load_dotenv()
 
